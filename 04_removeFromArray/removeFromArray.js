@@ -1,7 +1,9 @@
 const removeFromArray = function(arr,removeEntry) {
-const myArr =[];
-myArr.push(arr);
-
+    //remove the .push and set array directly as arr
+    const myArr = arr;
+    let entryIndex = myArr.indexOf(removeEntry);
+    myArr.splice(entryIndex,1);
+    return myArr;
 };
 
 // Do not edit below this line
