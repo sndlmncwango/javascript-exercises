@@ -1,9 +1,12 @@
-const removeFromArray = function(arr,removeEntry) {
-    //remove the .push and set array directly as arr
-    const myArr = arr;
-    let entryIndex = myArr.indexOf(removeEntry);
-    myArr.splice(entryIndex,1);
-    return myArr;
+const removeFromArray = function(arr, ...removeEntry) {
+    myArr = arr    
+    for(let i=0;i<removeEntry.length;i++){
+            rmIndex = arr.indexOf(removeEntry[i]);
+            arr.splice(rmIndex,1)
+           
+            
+        }
+    return myArr
 };
 
 // Do not edit below this line
