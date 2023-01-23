@@ -1,4 +1,6 @@
-const removeFromArray = function() {
+const removeFromArray = function(arr,removeEntry) {
+const myArr =[];
+myArr.push(arr);
 
 };
 
